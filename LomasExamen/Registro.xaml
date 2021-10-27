@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-6" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LomasExamen.Registro">
@@ -9,10 +9,7 @@
                 HorizontalOptions="CenterAndExpand" />
             
              <Label Text="REGISTRO."/>
-            
-            <Label x:Name="lblUsuario"/>
-            <Label x:Name="lblClave"/>
-            
+                           
             <Entry x:Name="txtUsuario" IsReadOnly="True"/>
             <Entry x:Name="txtClave" IsReadOnly="True"/>
             
@@ -27,7 +24,6 @@
 
             </Grid.RowDefinitions>
             
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -35,7 +31,7 @@
             </Grid.ColumnDefinitions>
 
                 <Label Text="Ingrese Nombre" Grid.Row="0" Grid.Column="0"/>
-                <Entry x:Name="txtValorUno" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1"/>
 
                 <Label Text="Ingrese Monto Inicial" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
@@ -46,8 +42,12 @@
                 <Label Text="ResultadoCuota" Grid.Row="3" Grid.Column="0" />
                 <Entry x:Name="txtResultadoCuota" IsReadOnly="True" Grid.Row="3" Grid.Column="1"/>
                 
+                <Label Text="Total" Grid.Row="4" Grid.Column="0" />
+                <Entry x:Name="txtTotal" IsReadOnly="True" Grid.Row="4" Grid.Column="1"/>
                           
          </Grid>
+            
+             <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
             
              <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
             

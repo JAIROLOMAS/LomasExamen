@@ -10,9 +10,8 @@
             
              <Label Text="RESUMEN"/>
             
-            <Label x:Name="lblUsuario"/>
-            <Label x:Name="lblClave"/>
-            
+            <Entry x:Name="txtNombre" IsReadOnly="True"/>
+            <Entry x:Name="txtTotal" IsReadOnly="True"/>           
             <Entry x:Name="txtUsuario" IsReadOnly="True"/>
             <Entry x:Name="txtClave" IsReadOnly="True"/>
             

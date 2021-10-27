@@ -12,16 +12,14 @@ namespace LomasExamen
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        public Resumen(string usuario, string clave)
+        public Resumen(string usuario, string clave, string nombre, string Total)
         {
             InitializeComponent();
 
-            InitializeComponent();
-            InitializeComponent();
-            lblUsuario.Text = usuario;
-            lblClave.Text = clave;
+            txtNombre.Text = nombre;
             txtUsuario.Text = usuario;
-            txtClave.Text = clave;
+            txtTotal.Text = Total;
+
         }
     }
 }
