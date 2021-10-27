@@ -24,12 +24,14 @@ namespace LomasExamen
         {
             try
             {
-                
+                string mensaje = " HOLA BIENVENIDO ";
                 string nombre = txtNombre.Text;
                 string Total = txtTotal.Text;
                 string usuario = txtUsuario.Text;
                 string clave = txtClave.Text;
-               
+
+                await DisplayAlert("Mensaje de Alerta", mensaje, "ok");
+
                 await Navigation.PushAsync(new Resumen(usuario, clave, Total, nombre));
 
 
