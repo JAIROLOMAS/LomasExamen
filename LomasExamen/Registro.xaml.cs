@@ -24,6 +24,7 @@ namespace LomasExamen
         {
             try
             {
+                
                 string nombre = txtNombre.Text;
                 string Total = txtTotal.Text;
                 string usuario = txtUsuario.Text;
