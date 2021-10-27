@@ -31,7 +31,7 @@ namespace LomasExamen
             }
             catch (Exception ex)
             {
-                await DisplayAlert("usuario/contrasenia incorrectos", ex.Message, "OK");
+                await DisplayAlert("usuario contrasenia incorrectos", ex.Message, "OK");
 
             }
 
